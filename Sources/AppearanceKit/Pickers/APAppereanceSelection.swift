@@ -18,7 +18,7 @@ import SwiftUI
 ///
 /// - Note: This view relies on the `APAppearanceProvider` environment object to manage the selected color scheme.
 @available(iOS 17.0, *)
-struct APAppereanceSelection: View {
+public struct APAppereanceSelection: View {
     /// The environment object providing the current appearance settings for the app.
     @Environment(APAppearanceProvider.self)
     private var appearanceProvider
@@ -32,7 +32,7 @@ struct APAppereanceSelection: View {
         [.light, .dark, .none]
     }
     
-    var body: some View {
+    public var body: some View {
         HStack {
             Spacer()
             ForEach(colorSchemeCases.indices, id: \.self) { index in

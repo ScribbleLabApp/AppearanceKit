@@ -19,7 +19,7 @@ import SwiftUI
 ///
 /// - Note: This view relies on `APAppearanceProvider` to manage and persist the selected color scheme.
 @available(iOS 17.0, *)
-struct APAppereanceOption: View {
+public struct APAppereanceOption: View {
     /// The environment object providing the current appearance settings for the app.
     @Environment(APAppearanceProvider.self)
     
@@ -39,11 +39,11 @@ struct APAppereanceOption: View {
     /// Creates an instance of `APAppereanceOption` with a specified color scheme.
     ///
     /// - Parameter colorScheme: The color scheme represented by this option.
-    init(colorScheme: ColorScheme?) {
+    public init(colorScheme: ColorScheme?) {
         self.colorScheme = colorScheme
     }
     
-    var body: some View {
+    public var body: some View {
         VStack(spacing: 12) {
             colorScheme.image
                 .resizable()

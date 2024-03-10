@@ -1,0 +1,17 @@
+@Tutorials(name: "Introducing AppearanceKit") {
+    @Intro(title: "Introducing AppearanceKit") {
+        AppearanceKit is a modern way to declare user interfaces color schemes for any Apple platform. Create beautiful, unique apps easier than ever before.
+        
+        @Image(source: overview-hero, alt: "Hero image")
+    }
+    
+    @Chapter(name: "AppearanceKit Essentials") {
+        Learn how to use AppearanceKit to compose unique views out of simple ones, set up data flow, and build the navigation while watching it unfold in Xcode’s preview.
+
+
+        
+        @Image(source: ap-essentials, alt: "Hero")
+        
+        @TutorialReference(tutorial: "doc:CreatingViews")
+    }
+}

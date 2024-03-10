@@ -18,11 +18,20 @@ AppearanceKit seamlessly integrates with your existing app structure. Utilize th
 ## Topics
 
 ### Essentials
-- <doc:Getting-Started>
+- <doc:GettingStarted>
+
+### Provider
+- <doc:APAppearanceProvider>
 
 ### View
+- <doc:APAppereanceOption>
+- <doc:APAppereanceSelection>
 
 ### ViewModifiers
+- <doc:APAppereanceModifier>
 
 ### Protocols
+- <doc:AppearanceProviding>
+
+### Framework integration
 

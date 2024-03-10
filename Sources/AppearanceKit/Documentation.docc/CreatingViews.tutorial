@@ -1,0 +1,35 @@
+@Tutorial(time: 15) {
+    @Intro(title: "Creating and combining views") {
+        This tutorial guides you through building NightOwl — an app for discovering and sharing facts and images of owls that you like. You’ll start by building the view that shows an owl's' details.
+
+        To lay out the views, NightOwl uses stacks to combine and layer the image and text view components. As you refine the view’s design, Xcode provides real-time feedback so you can see how those changes translate into code.
+
+        Download the project files to begin building this project, and follow the steps below.
+
+
+        
+        <!-->@Image(source: ap-essentials, alt: "background hero")<-->
+    }
+    
+    @Section(title: "<#text#>") {
+        @ContentAndMedia {
+            <#text#>
+            
+            @Image(source: <#file#>, alt: "<#accessible description#>")
+        }
+        
+        @Steps {
+            @Step {
+                <#text#>
+                
+                @Image(source: <#file#>, alt: "<#accessible description#>")
+            }
+            
+            @Step {
+                <#text#>
+                
+                @Code(name: "<#display name#>", file: <#filename.swift#>)
+            }
+        }
+    }
+}

@@ -18,7 +18,7 @@ import SwiftUI
 ///
 /// - Note: This view is designed for use in scenarios where a simple circular checkbox is required.
 @available(iOS 15.0, *)
-struct APCircleBox: View {
+public struct APCircleBox: View {
     /// A boolean indicating whether the checkbox is selected.
     private let isSelected: Bool
     
@@ -30,12 +30,12 @@ struct APCircleBox: View {
     /// - Parameters:
     ///   - isSelected: A boolean indicating whether the checkbox is selected.
     ///   - circleSize: The size of the circular checkbox. Defaults to `24.0`.
-    init(isSelected: Bool, circleSize: CGFloat = 24.0) {
+    public init(isSelected: Bool, circleSize: CGFloat = 24.0) {
         self.isSelected = isSelected
         self.circleSize = circleSize
     }
     
-    var body: some View {
+    public var body: some View {
         Image(systemName: isSelected ? "checkmark.circle.fill" : "circle")
             .resizable()
             .frame(width: circleSize, height: circleSize)
