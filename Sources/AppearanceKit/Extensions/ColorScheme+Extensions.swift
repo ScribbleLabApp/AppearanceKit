@@ -7,9 +7,21 @@
 
 import SwiftUI
 
+/// An extension on `ColorScheme` providing additional functionality and customization.
+///
+/// Use this extension to easily access icon representations, images, titles, and initialize color schemes.
+///
+/// ```swift
+/// let lightIcon = ColorScheme.light.icon
+/// let darkImage = ColorScheme.dark.image
+/// let systemTitle = ColorScheme.none.title
+/// let customScheme = ColorScheme(title: "Custom")
+/// ```
+///
+/// - Note: The extension enhances the default `ColorScheme` with more descriptive representations and initialization options.
 @available(iOS 13.0, *)
 public extension ColorScheme? {
-    /// Icon representation of the color scheme.
+    /// A system SF Symbol icon representing the color scheme.
     var icon: Image {
         switch self {
         case .light:
@@ -23,6 +35,7 @@ public extension ColorScheme? {
         }
     }
     
+    /// An image representation of the color scheme.
     var image: Image {
         switch self {
         case .light:
@@ -36,6 +49,7 @@ public extension ColorScheme? {
         }
     }
     
+    /// The human-readable title of the color scheme.
     var title: String {
         switch self {
         case .light:
@@ -49,6 +63,9 @@ public extension ColorScheme? {
         }
     }
     
+    /// Creates a `ColorScheme` instance based on the specified title.
+    ///
+    /// - Parameter title: The title representing the desired color scheme.
     init(title: String) {
         switch title {
         case "Light":

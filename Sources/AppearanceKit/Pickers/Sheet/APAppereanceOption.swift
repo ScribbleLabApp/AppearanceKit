@@ -7,17 +7,38 @@
 
 import SwiftUI
 
+/// A SwiftUI view representing an appearance option for customizing the color scheme of the app.
+///
+/// Use `APAppereanceOption` to display a visual representation of a color scheme, its title, and a selection indicator.
+/// Tap gestures on the view update the app's color scheme through the `APAppearanceProvider`.
+///
+/// ```swift
+/// APAppereanceOption(colorScheme: .dark)
+///     .previewLayout(.sizeThatFits)
+/// ```
+///
+/// - Note: This view relies on `APAppearanceProvider` to manage and persist the selected color scheme.
 @available(iOS 17.0, *)
 struct APAppereanceOption: View {
+    /// The environment object providing the current appearance settings for the app.
     @Environment(APAppearanceProvider.self)
     
     private var appearanceProvider
+    
+    /// The color scheme represented by this option.
     private let colorScheme: ColorScheme?
+    
+    /// The corner radius of the visual representation.
     private let cornerRadius: CGFloat = 8.0
+    
+    /// A boolean indicating whether this appearance option is currently selected.
     private var isSelected: Bool {
         colorScheme == appearanceProvider.colorScheme
     }
     
+    /// Creates an instance of `APAppereanceOption` with a specified color scheme.
+    ///
+    /// - Parameter colorScheme: The color scheme represented by this option.
     init(colorScheme: ColorScheme?) {
         self.colorScheme = colorScheme
     }
