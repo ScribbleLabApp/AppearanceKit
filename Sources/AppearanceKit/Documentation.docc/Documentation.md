@@ -22,6 +22,7 @@ AppearanceKit seamlessly integrates with your existing app structure. Utilize th
 
 ### Essentials
 - <doc:appearancekit>
+- <doc:night-owl>
 
 ### Provider
 - <doc:APAppearanceProvider>
