@@ -13,7 +13,10 @@ Embrace a declarative approach to color customization with AppearanceKit. Define
 AppearanceKit seamlessly integrates with your existing app structure. Utilize the framework to enhance your app's visual appeal without the need for extensive modifications to your codebase.
 
 ### Featured samples
-
+@Links(visualStyle: detailedGrid) { 
+    - <doc:appearancekit>
+    - <doc:night-owl>
+}
 
 ## Topics
 
