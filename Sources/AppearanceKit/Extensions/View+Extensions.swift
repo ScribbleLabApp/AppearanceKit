@@ -18,7 +18,7 @@ import SwiftUI
 ///
 /// - Note: This extension uses the `APAppereanceModifier` to apply the specified color scheme to the view.
 @available(iOS 17.0, *)
-extension View {
+public extension View {
     /// Sets the appearance of the view.
     ///
     /// - Parameters:

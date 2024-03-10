@@ -12,7 +12,7 @@ import SwiftUI
 /// Adopt `AppearanceProviding` to create custom objects responsible for managing color schemes.
 /// Implement the `colorScheme` property to get and set the color scheme for your app.
 @available(iOS 17.0, *)
-protocol AppearanceProviding {
+public protocol AppearanceProviding {
     /// The color scheme currently applied to the app.
     @available(iOS 17.0, *)
     var colorScheme: ColorScheme? { get set }
