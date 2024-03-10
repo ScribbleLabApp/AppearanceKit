@@ -18,7 +18,7 @@ AppearanceKit seamlessly integrates with your existing app structure. Utilize th
 ## Topics
 
 ### Essentials
-- <doc:GettingStarted>
+- <doc:appearancekit>
 
 ### Provider
 - <doc:APAppearanceProvider>

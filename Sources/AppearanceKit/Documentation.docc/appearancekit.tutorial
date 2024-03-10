@@ -12,6 +12,6 @@
         
         @Image(source: ap-essentials, alt: "Hero")
         
-        @TutorialReference(tutorial: "doc:CreatingViews")
+        @TutorialReference(tutorial: "doc:creating-and-combining-views")
     }
 }
