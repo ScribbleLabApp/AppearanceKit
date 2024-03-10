@@ -36,7 +36,7 @@ public extension ColorScheme? {
         }
     }
     
-    var name: String {
+    var title: String {
         switch self {
         case .light:
             return "Light"

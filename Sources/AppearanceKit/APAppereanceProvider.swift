@@ -7,8 +7,9 @@
 
 import SwiftUI
 
+@available(iOS 17.0, *)
 protocol AppearanceProviding {
-    @available(iOS 13.0, *)
+    @available(iOS 17.0, *)
     var colorScheme: ColorScheme? { get set }
 }
 

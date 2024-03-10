@@ -17,7 +17,7 @@ extension View {
     /// - Returns: A view with the specified appearance.
     public func setAppearance(`default`: ColorScheme? = nil,
                               storage: UserDefaults = .standard) -> some View {
-        modifier(AppearanceProvidingViewModifier(.init(defaultAppearance: `default`,
-                                                       userDefaults: storage)))
+        modifier(APAppereanceModifier(.init(defaultAppearance: `default`,
+                                            userDefaults: storage)))
     }
 }

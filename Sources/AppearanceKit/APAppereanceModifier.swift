@@ -18,6 +18,6 @@ struct APAppereanceModifier: ViewModifier {
     }
 
     init(_ appearanceProvider: APAppearanceProvider) {
-        self._appearanceProvider = .init(initialValue: APAppearanceProvider)
+        self._APAppearanceProvider = State(initialValue: appearanceProvider) // .init
     }
 }

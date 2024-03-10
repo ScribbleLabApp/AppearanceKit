@@ -11,8 +11,10 @@ import SwiftUI
 struct APAppereanceSelection: View {
     @Environment(APAppearanceProvider.self)
     private var appearanceProvider
+    
     @Environment(\.dismiss)
     private var dismiss
+    
     private var colorSchemeCases: [ColorScheme?] {
         [.light, .dark, .none]
     }
@@ -20,9 +22,11 @@ struct APAppereanceSelection: View {
     var body: some View {
         HStack {
             Spacer()
-            ForEach(colorSchemeCases, id: \.title) { colorScheme in
-                APAppereanceOption(colorScheme: colorScheme)
-                    .frame(maxWidth: .infinity)
+            ForEach(colorSchemeCases.indices, id: \.self) { index in
+                if let colorScheme = colorSchemeCases[index] {
+                    APAppereanceOption(colorScheme: colorScheme)
+                        .frame(maxWidth: .infinity)
+                }
             }
             Spacer()
         }
